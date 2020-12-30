@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 22px;
+  font-family: Helvetica, "Times New Roman", Times, serif;
+  color: white;
+  text-align: center;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  min-height: 69px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid seashell;
+  background-color: #181717;
+  max-width: 100%;
+}
+header .log-link {
+  display: inline-block;
+  text-decoration: none;
+}
+header .log-link .logo {
+  color: #aaa1a1;
+  font-family: "Great Vibes", cursive;
+  font-size: 1.5rem;
+}
+header .nav-link {
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 10px;
+  color: #aaa1a1;
+}
+header .nav-link:hover {
+  color: #7d7daa;
+}
+
+.m-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  background-image: url("../images/img-mission-background.jpg");
+}
+.m-container .mission-c {
+  padding: 5px;
+  width: 100%;
+  background-color: black;
+}
+.m-container .mission-c .mission-h {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+.m-container .mission-c .exp {
+  font-size: 1.1rem;
+}
+
+.m-ti {
+  max-width: 1000px;
+  margin: 60px auto 40px auto;
+}
+.m-ti h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.gallery .card {
+  margin-left: 20px;
+}
+.gallery .card img {
+  width: 300px;
+  height: 200px;
+}
+
+.loc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/img-locations-background.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  max-width: 1200px;
+  min-height: 500px;
+  margin: 40px auto 20px auto;
+}
+.loc h2 {
+  opacity: 0.7;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+.loc .cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  align-content: space-around;
+  justify-content: center;
+}
+.loc .cards .tea-c {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 300px;
+  height: 300px;
+  background-color: #0a0a0a;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#t {
+  font-size: 1.9rem;
+  margin-bottom: 30px;
+}
+
+h5 {
+  margin-bottom: 50px;
+}
+
+p {
+  text-align: left;
+  margin-left: 20px;
+}
+
+@media only screen and (min-width: 580) {
+  header {
+    flex-direction: column;
+  }
+
+  header .log-link .logo {
+    font-size: 1.1rem;
+  }
+}
